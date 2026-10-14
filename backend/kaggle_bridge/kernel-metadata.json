@@ -1,0 +1,16 @@
+{
+  "id": "vivekanandrajbhar/hypkraft-ai-studio-gpu-worker",
+  "title": "HypKraft AI Studio - GPU Worker",
+  "code_file": "hypkraft_kaggle_worker.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "AUTO_SCALED",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

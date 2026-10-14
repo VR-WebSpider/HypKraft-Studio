@@ -1,0 +1,42 @@
+HYPKRAFT STUDIO END USER LICENSE AGREEMENT (EULA)
+
+Copyright (c) 2026 WebSpider Studios. All rights reserved.
+
+IMPORTANT: PLEASE READ THIS END USER LICENSE AGREEMENT ("AGREEMENT") CAREFULLY BEFORE INSTALLING OR USING HYPKRAFT STUDIO ("SOFTWARE"). BY CLICKING "I ACCEPT" OR INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1. GRANT OF LICENSE
+WebSpider Studios grants you a non-exclusive, non-transferable, revocable license to install and use HypKraft Studio on any computer running compatible Microsoft Windows operating systems solely for personal or commercial multimedia creation, AI video orchestration, motion graphics design, and audio composition.
+
+2. STANDALONE ZERO-PREREQUISITE ARCHITECTURE
+HypKraft Studio is engineered as a self-contained runtime environment. The Software operates directly on your system without requiring external software prerequisites such as Node.js or Python runtime installations on the host system.
+
+3. INTELLECTUAL PROPERTY & CREATOR RIGHTS
+- All artwork, video compositions, audio tracks, keyframe animations, 3D typography, and multimedia productions created, rendered, or exported by you using HypKraft Studio belong exclusively to you.
+- WebSpider Studios retains all intellectual property rights, copyrights, trademarks, and trade secrets in the HypKraft Studio application, user interface, brand assets, and proprietary algorithms.
+
+4. USER RESTRICTIONS
+You agree NOT to:
+- Reverse engineer, decompile, disassemble, or derive the source code of HypKraft Studio for malicious extraction or vulnerability weaponization.
+- Embed unauthorized spyware, malware, cryptominers, or telemetry hooks into the Software.
+- Distribute modified installer binaries or unauthorized cracked copies claiming official sponsorship.
+
+5. SECURITY & AI INTEGRATION
+- HypKraft Studio includes Model Context Protocol (MCP) server endpoints for integration with authorized local AI development environments (e.g., Claude Desktop, Cursor, Antigravity).
+- You are responsible for safeguarding your own third-party API credentials (such as OpenAI, Google Gemini, or Anthropic API keys) should you choose to configure optional cloud services.
+- HypKraft Studio does not transmit your personal local media or secret API keys to WebSpider Studios servers without your explicit directive.
+
+6. DISCLAIMER OF WARRANTIES
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+IN NO EVENT SHALL WEBSPIDER STUDIOS, ITS FOUNDERS, DIRECTORS, EMPLOYEES, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF PROFITS, DATA LOSS, OR BUSINESS INTERRUPTION) ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE.
+
+8. TERMINATION
+This Agreement is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any term of this Agreement. Upon termination, you must cease all use and destroy all copies of the Software.
+
+9. GOVERNING LAW
+This Agreement shall be governed and interpreted in accordance with applicable international intellectual property and commercial law.
+
+WebSpider Studios
+Official Portal: https://hypkraft.webspiderstudios.com
+Support & Documentation: https://webspiderstudios.com

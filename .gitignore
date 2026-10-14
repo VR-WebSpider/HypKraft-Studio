@@ -1,0 +1,67 @@
+# ==============================================================================
+# HypKraft Studio - Security-First Git Ignore
+# Prevents secrets, heavy binaries (>100MB), build artifacts, and runtime files
+# ==============================================================================
+
+# --- Environment & Security Secrets ---
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+*.token
+*secret*
+credentials.json
+
+# --- Dependency Directories ---
+node_modules/
+*/node_modules/
+venv/
+*/venv/
+.venv/
+*/.venv/
+
+# --- Heavy Precompiled Binaries (>100MB GitHub limit) ---
+HypKraft-Studio-Setup/
+*.pak
+*.dll
+*.dat
+*.bin
+dist_electron/
+*/dist_electron/
+win-unpacked*/
+
+# --- Build Outputs ---
+dist/
+*/dist/
+.output/
+.parcel-cache/
+.turbo/
+.vercel/
+*/.vercel/
+
+# --- Python Artifacts ---
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Other Projects in workspace ---
+audio-upcoming/
+
+# --- Operating System & Editor Artifacts ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+.vscode/
+.idea/

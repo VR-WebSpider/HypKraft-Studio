@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "hypkraft": {
+      "command": "D:\\AI Video Editor\\venv\\Scripts\\python.exe",
+      "args": [
+        "D:\\AI Video Editor\\backend\\services\\mcp_server.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
