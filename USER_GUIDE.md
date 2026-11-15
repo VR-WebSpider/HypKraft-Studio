@@ -2,7 +2,7 @@
 
 ![HypKraft Studio](hypkraft_icon.png)
 
-Welcome to the official manual for **HypKraft Studio** — the world's first Prompt-to-Timeline AI Video and 3D Motion Graphics Editor. Built by WebSpider Studios.
+Welcome to the official manual for **HypKraft Studio** — an experimental Prompt-to-Timeline AI Video and 3D Motion Graphics Workstation. Built by WebSpider Studios.
 
 ---
 

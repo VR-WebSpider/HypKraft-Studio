@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
         <div className="md:col-span-2 space-y-3">
           <HypKraftLogo size={28} />
           <p className="text-slate-500 text-xs max-w-sm leading-relaxed">
-            The world's first Prompt-to-Timeline AI Video and 3D Motion Graphics Studio. Built by WebSpider Studios for film directors, VFX creators, and autonomous coding agents.
+            An experimental Prompt-to-Timeline AI Video and 3D Motion Graphics Workstation. Built by WebSpider Studios for creative exploration, generative media, and autonomous coding agents.
           </p>
           <div className="flex items-center gap-2 text-[11px] text-emerald-600 font-medium">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />

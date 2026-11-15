@@ -5,7 +5,7 @@ color 0B
 
 echo ===============================================================================
 echo                HYPKRAFT STUDIO v1.0.0 - OFFICIAL SETUP WIZARD
-echo         The World's First Prompt-to-Timeline AI Video & 3D Motion Graphics Studio
+echo         An Experimental Prompt-to-Timeline AI Video & 3D Motion Graphics Workstation
 echo                          (c) 2026 WebSpider Studios
 echo ===============================================================================
 echo.
