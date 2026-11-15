@@ -2,7 +2,7 @@
 
 ![HypKraft Studio](hypkraft_icon.png)
 
-Welcome to the official manual for **HypKraft Studio** — an experimental Prompt-to-Timeline AI Video and 3D Motion Graphics Workstation. Built by WebSpider Studios.
+Welcome to the user guide for **HypKraft Studio** — an internal game asset and cutscene pipeline tool built for WebSpider Studios to generate, sequence, and render multimedia elements for indie game development.
 
 ---
 

@@ -4,40 +4,39 @@
 
 # HypKraft Studio
 
-### Personal & Experimental Multi-Tool Creative AI Suite
-**AI Video • Image • Audio • 3D Assets • Motion & Animation Engine**
+### Internal Game Asset & Cutscene Pipeline Tool
+**Built for WebSpider Studios • Game Cutscenes, 3D Motion, Audio SFX & Concept Assets**
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0_Experimental-emerald.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
+[![Release](https://img.shields.io/badge/Release-v1.0.0_Internal-emerald.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![Platform](https://img.shields.io/badge/Platform-Windows_64--bit-blue.svg?style=for-the-badge&logo=windows)](https://hypkraft.webspiderstudios.com)
 [![Architecture](https://img.shields.io/badge/Architecture-React_19_|_Three.js_|_Electron-cyan.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![Backend](https://img.shields.io/badge/Backend-FastAPI_|_FFmpeg-green.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![Protocol](https://img.shields.io/badge/Protocol-MCP_Port_8000-orange.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![License](https://img.shields.io/badge/License-Source--Available_(Non--Commercial)-pink.svg?style=for-the-badge)](LICENSE.md)
 
-**Official Web Portal & Download Hub:** [https://hypkraft.webspiderstudios.com](https://hypkraft.webspiderstudios.com)  
-**Maintained by:** WebSpider Studios
+**Maintained by:** WebSpider Studios &bull; [vivekanandrajbhar.link](https://vivekanandrajbhar.link)
 
 ---
 
 </div>
 
-## 🌟 Overview
+## 🎮 Why This Tool Exists
 
-**HypKraft Studio** is a personal and experimental creative workstation that bridges conversational generative AI with professional multi-track Non-Linear Editing (NLE). 
+When developing indie games at **WebSpider Studios** (such as *Drone Crash Game* and *Aqua-Sort*), creating narrative cutscenes, promotional game trailers, 3D animated title screens, and custom sound effects presents a massive bottleneck for a solo developer or small team. Commercial software suites are fragmented, and paying subscription fees for separate cloud AI services quickly becomes unsustainable.
 
-Rather than producing isolated, uneditable video clips, HypKraft connects to your own self-hosted AI models running on cloud GPUs (such as **Kaggle**, **RunPod**, or local GPU instances) to generate and compose complete, layer-by-layer creative timelines:
+**HypKraft Studio** was built as an internal desktop pipeline tool to solve this exact problem: a single, unified workstation that connects to our own **self-hosted AI models running on cloud GPUs (such as Kaggle and RunPod)** to generate, assemble, and render the multimedia elements required for game production:
 
-* 🎬 **AI Video Generation:** Generate dynamic clips and prompt-guided cinematic video sequences directly placed into multi-track video layers.
-* 🖼️ **AI Image & Concept Generation:** Create visual concept art, background plates, textures, and style frames on demand.
-* 🎵 **AI Audio & Procedural Sound Design:** Synthesize musical stems, Foley sound effects, ambient pads, and Web Audio API waveforms at 48 kHz 32-bit float precision.
-* 🧊 **3D Asset Generation & Motion Graphics:** Real-time Three.js & WebGL 2.0 viewport featuring GLSL motion shaders, extruded 3D kinetic typography, and 3D particle nebulas.
-* ⚡ **Motion & Animation Engine:** Keyframe curves, camera pans, and procedural transitions for dynamic pacing and visual storytelling.
-* ☁️ **Self-Hosted Cloud GPU Integration:** Connects seamlessly to your personal self-hosted cloud GPUs (e.g., Kaggle GPU environments running ComfyUI, Ollama, Whisper, or custom diffusion backends) via secure tunneling, keeping inference private, flexible, and completely under your control.
-* 🤖 **Model Context Protocol (MCP):** Embedded MCP server on port 8000 allowing autonomous AI coding assistants (Claude Desktop, Cursor, Antigravity) to inspect clips, manipulate layouts, and trigger video exports headlessly.
+* 🎬 **Game Cutscenes & Trailer Clips:** Compose cinematic video shots, story sequences, and promo teaser clips directly onto an interactive multi-track timeline.
+* 🖼️ **2D Concept Textures & Backgrounds:** Generate environment backdrops, UI concept art, and texture reference plates via self-hosted diffusion pipelines.
+* 🔊 **Procedural Game Audio & SFX:** Generate audio stems, Foley effects (whooshes, impacts, engine drones, UI clicks), and real-time Web Audio API waveforms at 48 kHz.
+* 🧊 **3D Title Typography & Motion UI:** Real-time Three.js / WebGL 2.0 viewport for extruded 3D kinetic text, GLSL particle shaders, and animated logo reveals for game menus and intro sequences.
+* ⚡ **Multi-Track Timeline Compositing:** Layer video, audio, and 3D graphics with non-linear editing (hard-cuts, cross-fades, keyframe timing) and export final 60 FPS video via FFmpeg.
+* ☁️ **Self-Hosted Cloud GPU Infrastructure:** Keeps development costs at zero by offloading heavy inference to personal cloud GPU instances (Kaggle / RunPod / private rigs) via secure API tunnels.
+* 🤖 **Model Context Protocol (MCP) Integration:** Exposes timeline state and editing tools on port 8000, allowing local coding assistants (Claude Desktop, Cursor, Antigravity) to script scene generation and asset placement programmatically.
 
 ---
 
-## 🗺️ How Exactly It Works (System Architecture)
+## 🗺️ System Architecture (How It Works)
 
 ```mermaid
 flowchart TD
@@ -56,62 +55,59 @@ flowchart TD
     end
 
     subgraph CloudGPU ["☁️ Self-Hosted Cloud GPUs (Kaggle / RunPod / Private Rig)"]
-        VideoGen["Video Generation (AnimateDiff / Wan / CogVideo)"]
-        ImageGen["Image & Texture Generation (SDXL / Flux / ComfyUI)"]
-        AudioGen["Audio & SFX Generation (AudioCraft / Stable Audio)"]
-        SpeechWhisper["Speech & Transcription (Faster-Whisper)"]
-        LocalLLM["Prompt Decomposition & Timeline Planning (Ollama / LLMs)"]
+        VideoGen["Game Cutscene Generation (Video Diffusion Models)"]
+        ImageGen["Texture & Concept Generation (SDXL / Flux / ComfyUI)"]
+        AudioGen["SFX & Music Synthesis (AudioCraft / Stable Audio)"]
+        SpeechWhisper["Voiceover & Dialogue Alignment (Faster-Whisper)"]
+        LocalLLM["Scene Decomposition & Script Planning (Ollama / Local LLMs)"]
     end
 
-    subgraph ExternalAgents ["🤖 Autonomous AI Coding Assistants"]
-        Claude["Claude Desktop"]
-        Cursor["Cursor IDE"]
-        Antigravity["Antigravity / Local Agents"]
+    subgraph GameProject ["🎮 Target Game Engine / Production"]
+        UnityBuild["Unity / Godot / Unreal Engine Project"]
+        GameTrailers["Game Trailer / Store Showcase Media"]
     end
 
-    PromptBar -->|Prompt Request| FastAPI
+    PromptBar -->|Scene Prompt| FastAPI
     FastAPI -->|Dispatches Inference| CloudGPU
-    CloudGPU -->|Returns Generated Assets| FastAPI
-    FastAPI -->|Streams to Project| NLE
+    CloudGPU -->|Returns Media Assets| FastAPI
+    FastAPI -->|Populates Timeline| NLE
     NLE --> ThreeCanvas
     NLE --> WebAudio
     NLE -->|Render Pipeline| FFmpegEngine
-    FFmpegEngine -->|Saves Output| LocalStorage
-
-    ExternalAgents <-->|Inspect & Control via MCP| MCPServer
-    MCPServer <-->|Direct Timeline State Mutation| FastAPI
+    FFmpegEngine -->|MP4 / WAV / PNG| LocalStorage
+    LocalStorage --> GameProject
 ```
 
 ---
 
-## 🎨 How to Use This Tool (User Creative Workflow)
+## 🎬 Studio Workflow (How We Use It To Build Game Elements)
 
 ```mermaid
 sequenceDiagram
     autonumber
-    actor Creator as 🎬 Creator
-    participant Studio as 🖥️ HypKraft Studio UI
+    actor Dev as 🕹️ Game Developer
+    participant Studio as 🖥️ HypKraft Studio
     participant Backend as ⚡ FastAPI Backend
-    participant GPU as ☁️ Cloud GPU (Kaggle)
-    participant Engine as 🎞️ FFmpeg & WebGL
+    participant CloudGPU as ☁️ Kaggle Cloud GPU
+    participant FFmpeg as 🎞️ FFmpeg Render Engine
+    participant Game as 🎮 Game Engine (Unity)
 
-    Creator->>Studio: 1. Input natural language prompt or import raw media
-    Note over Creator,Studio: e.g. "Create 10s cyberpunk intro with 3D glowing title and heavy bass drop"
-    Studio->>Backend: 2. Parse creative prompt & decompose into timeline layers
-    Backend->>GPU: 3. Request Video, Image, Audio & 3D generation via API/Tunnel
-    GPU-->>Backend: 4. Stream back generated media assets (MP4, PNG, WAV, GLTF)
-    Backend-->>Studio: 5. Auto-populate Multi-Track Timeline with synchronized clips
-    Creator->>Studio: 6. Fine-tune in real-time: adjust keyframes, GLSL shaders, 3D typography
-    Creator->>Studio: 7. Click "Export Video" (or trigger via MCP agent)
-    Studio->>Engine: 8. Render video with FFmpeg hardware acceleration
-    Engine-->>Creator: 9. Final 1080p / 4K 60FPS Video ready in exports folder!
+    Dev->>Studio: 1. Describe cutscene / game element (e.g. "10s sci-fi boss intro with 3D title & low drone")
+    Studio->>Backend: 2. Decompose prompt into video, 3D text, and audio layer requirements
+    Backend->>CloudGPU: 3. Dispatch generation tasks to self-hosted cloud GPU models
+    CloudGPU-->>Backend: 4. Stream back generated video clip, texture, and audio waveforms
+    Backend-->>Studio: 5. Auto-populate Multi-Track Timeline with synchronized assets
+    Dev->>Studio: 6. Fine-tune in real-time: adjust keyframe timing, 3D shaders, and volume balance
+    Dev->>Studio: 7. Trigger Render Export (or automate via MCP coding agent)
+    Studio->>FFmpeg: 8. Hardware-accelerated composite and export
+    FFmpeg-->>Game: 9. Production-ready MP4/WAV asset imported directly into game cutscene!
 ```
 
 ---
 
-## 🚀 Quick Start (Running HypKraft Studio)
+## 🚀 Running HypKraft Studio Locally
 
-HypKraft Studio is pre-configured with zero prerequisites for end-users:
+HypKraft Studio is structured for straightforward local operation:
 
 1. **Clone the Repository:**
    ```bash
@@ -120,21 +116,21 @@ HypKraft Studio is pre-configured with zero prerequisites for end-users:
    ```
 
 2. **One-Click Studio Launch:**
-   Run the setup batch script:
+   Run the startup script:
    ```cmd
    start_studio.bat
    ```
-   This automatically initializes:
-   * **FastAPI Backend & MCP Server** on `http://127.0.0.1:8000`
-   * **Vite / React 19 Frontend** on `http://localhost:5173`
-   * **Interactive API Documentation** on `http://127.0.0.1:8000/docs`
+   This initializes:
+   * **FastAPI Backend & MCP Server:** `http://127.0.0.1:8000`
+   * **Vite / React 19 UI:** `http://localhost:5173`
+   * **Interactive API Docs:** `http://127.0.0.1:8000/docs`
 
-3. **Connect to Your Self-Hosted Cloud GPUs:**
-   In your `.env` (or via the in-app Settings modal), point your model endpoints to your local or cloud GPU instances:
+3. **Configure Self-Hosted Cloud GPU Endpoints:**
+   In your `.env` (or via the in-app Settings modal), point your model endpoints to your self-hosted Kaggle/RunPod tunnels or local GPU server:
    ```env
-   # Self-Hosted Cloud GPU / Tunnel URLs (e.g. Kaggle / RunPod / Ngrok)
+   # Self-Hosted Cloud GPU / Local Endpoints
    OLLAMA_URL=http://localhost:11434
-   COMFYUI_URL=http://your-kaggle-or-cloud-tunnel:8188
+   COMFYUI_URL=http://your-kaggle-tunnel:8188
    AUDIOCRAFT_URL=http://your-cloud-gpu:8001
    WHISPER_URL=http://your-cloud-gpu:9000
    ```
@@ -171,24 +167,23 @@ HypKraft Studio runs an internal MCP server allowing external AI agents to manip
 
 ---
 
-## 🔒 Privacy & Architecture Notes
+## 🔒 Privacy & Local Execution
 
-- **Local-First Storage:** Project timelines, cache, and exported media files remain on your local disk.
-- **Loopback Isolated:** The backend server and MCP endpoints bind exclusively to `127.0.0.1` (localhost), ensuring external networks cannot access your editing session without your authorization.
-- **Self-Hosted AI Flexibility:** All creative generation pipelines are modular and connect to your own self-hosted cloud or local GPU instances, guaranteeing complete privacy and zero third-party subscription lock-in.
+- **Local Storage First:** All project timelines, media cache, and rendered cutscenes stay strictly on your local machine.
+- **Isolated Network Footprint:** The backend server and MCP endpoints bind exclusively to `127.0.0.1` (localhost loopback).
+- **Self-Hosted AI Control:** Connects to your own self-hosted cloud or local GPU instances, guaranteeing complete privacy and zero vendor lock-in.
 
 ---
 
-## 📄 Legal & Documentation Links
+## 📄 Documentation & License
 
-- **Full User Manual:** [USER_GUIDE.md](USER_GUIDE.md)
-- **Source-Available License:** [LICENSE.md](LICENSE.md)
+- **Source-Available License:** [LICENSE.md](LICENSE.md) *(Non-commercial & evaluation license for WebSpider Studios)*
 - **End User License Agreement:** [EULA.md](EULA.md)
+- **User Guide:** [USER_GUIDE.md](USER_GUIDE.md)
 - **Security Policy:** [SECURITY.md](SECURITY.md)
-- **Official Portal:** [https://hypkraft.webspiderstudios.com](https://hypkraft.webspiderstudios.com)
 
 ---
 
 <div align="center">
-  <p>© 2026 WebSpider Studios. Experimental Creative AI Workstation.</p>
+  <p>© 2026 WebSpider Studios. Internal Game Development Tooling.</p>
 </div>
