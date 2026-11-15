@@ -51,7 +51,7 @@ export const MCPModal: React.FC<MCPModalProps> = ({ isOpen, onClose }) => {
     2
   );
 
-  const apiToken = 'hypkraft_live_secret_key_2026';
+  const apiToken = import.meta.env.VITE_HYPKRAFT_API_TOKEN || 'hypkraft-local-dev-token';
 
   const antigravitySnippet = JSON.stringify(
     {

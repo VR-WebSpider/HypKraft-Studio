@@ -4,7 +4,7 @@
 
 HypKraft Studio is engineered with security and privacy by design:
 - **Local-First Execution:** Your projects, timeline tracks, and media footage remain strictly local to your machine.
-- **Zero Hardcoded Secrets:** No API keys, credentials, or production tokens are hardcoded into the source code or released binaries.
+- **User-Controlled Credentials & Privacy:** All endpoint tokens, self-hosted GPU URLs, and keys remain strictly local to your private environment.
 - **Isolated MCP Endpoints:** The Model Context Protocol (MCP) server binds exclusively to local loopback interfaces (`localhost` / `127.0.0.1`), ensuring external networks cannot access your editing session without your authorization.
 - **No Injected Telemetry:** HypKraft Studio does not harbor third-party user trackers or unauthorized data harvesting pipelines.
 
