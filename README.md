@@ -12,7 +12,7 @@
 [![Architecture](https://img.shields.io/badge/Architecture-React_19_|_Three.js_|_Electron-cyan.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![Backend](https://img.shields.io/badge/Backend-FastAPI_|_FFmpeg-green.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
 [![Protocol](https://img.shields.io/badge/Protocol-MCP_Port_8000-orange.svg?style=for-the-badge)](https://hypkraft.webspiderstudios.com)
-[![License](https://img.shields.io/badge/License-EULA_(100%25_Creator_Owned)-pink.svg?style=for-the-badge)](EULA.md)
+[![License](https://img.shields.io/badge/License-Source--Available_(Non--Commercial)-pink.svg?style=for-the-badge)](LICENSE.md)
 
 **Official Web Portal & Download Hub:** [https://hypkraft.webspiderstudios.com](https://hypkraft.webspiderstudios.com)  
 **Maintained by:** WebSpider Studios
@@ -182,6 +182,7 @@ HypKraft Studio runs an internal MCP server allowing external AI agents to manip
 ## 📄 Legal & Documentation Links
 
 - **Full User Manual:** [USER_GUIDE.md](USER_GUIDE.md)
+- **Source-Available License:** [LICENSE.md](LICENSE.md)
 - **End User License Agreement:** [EULA.md](EULA.md)
 - **Security Policy:** [SECURITY.md](SECURITY.md)
 - **Official Portal:** [https://hypkraft.webspiderstudios.com](https://hypkraft.webspiderstudios.com)
